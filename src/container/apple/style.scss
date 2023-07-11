@@ -1,0 +1,67 @@
+@use "../../lib/service.scss" as s;
+
+
+
+.header {
+    @extend .section;
+    background: s.color("backgroundDark");
+}
+
+.header__content {
+    @extend .section__content;
+
+    display: flex;
+    justify-content: space-between;
+    padding: s.space(4) 0;
+    
+}
+
+.header__block {
+    display: flex;
+    gap: s.space(8);
+    align-items: center;
+}
+
+.header__icon {
+    @include s.click;
+}
+
+.header__link {
+    text-decoration: none;
+    color: s.color("whiteLight");
+    @include s.click;
+
+    font-size: s.size("small");
+}
+
+.ad__block {
+    background: s.color("backgroundWhite");
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: calc(s.space(2) + 7px);
+    padding-top: s.space(3);
+	padding-bottom: s.space(3);
+    position: relative;
+}
+
+.ad__title {
+    font-size: s.size("medium");
+    color: s.color("fontDark");
+}
+
+.ad__link {
+    font-size: s.size("medium");
+    color: s.color("colorPrimary");
+    text-decoration: none;
+}
+
+.ad__linkArrowBlock {
+    content: '';
+		width: 7px;
+		height: 14px;
+		background-repeat: no-repeat;
+		position: absolute;
+		right: 0;
+        
+}
