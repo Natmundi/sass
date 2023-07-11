@@ -4,7 +4,7 @@ $colorMap: (
     whiteLight: #dadada,
     backgroundWhite: #FFFFFF,
     fontDark: #1D1D1F,
-    colorPrimary: #06C,
+    colorPrimary: #0066CC,
 );
 
 @function color ($key) {
@@ -12,9 +12,10 @@ $colorMap: (
 }
 
 $sizeMap: (
-    default: 16px,
     small: 12px,
     medium: 14px,
+    default: 16px,
+    
 );
 
 @function size ($key: "default") {
